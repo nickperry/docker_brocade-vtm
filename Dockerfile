@@ -1,6 +1,7 @@
 FROM ubuntu-debootstrap:14.04.2
 ADD https://support.riverbed.com/bin/support/download?sid=6mv0npda0dlj836kdbo451gtd /tmp/
 COPY zinstall.txt /tmp/
+RUN tar -C /tmp -zxvf /tmp/download*
 RUN /tmp/Zeus*/zinstall --replay-from=/tmp/zinstall.txt --noninteractive
 RUN rm -rf /tmp/*
 COPY zconfig.txt /usr/local/zeus/
