@@ -11,4 +11,3 @@ ENV ZEUS_PASS=RANDOM
 ENV ZEUS_DOM=
 CMD [ "/usr/local/zeus/runzeus.sh" ]
 EXPOSE 9070 9080 9090 80 443
-
