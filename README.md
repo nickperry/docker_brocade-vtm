@@ -41,9 +41,6 @@ Once started, point your web browser at port 9090 to access the web interface, o
 Building a docker image
 -----------------------
 
-You will need to download a copy of the Brocade VTM installer and update the dockerfile to use it
-
-Today (2015-07-25)
-Current Linux version is: ZeusTM_100r1_Linux-x86_64.tgz
-Available Here: https://support.riverbed.com/content/support/software/steelapp/traffic-manager.html
+    cd <docker folder>
+    docker build -t <tag> .
 
